@@ -26,7 +26,7 @@ while(1):
         break
     openai.api_key = OPENAI_API_KEY
     context = ""
-    with open('Bot1.txt','r') as cnt:
+    with open('context.txt','r') as cnt:
         context = cnt.readlines()
     completion = openai.ChatCompletion.create(
         model = "gpt-3.5-turbo",
